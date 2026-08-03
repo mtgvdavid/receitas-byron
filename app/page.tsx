@@ -10,19 +10,19 @@ export default function Home() {
 
         <h1 className="text-5xl font-bold">Receitas deliciosas</h1>
         <p className="text-xl">Descubra receitas simples e saborosas para todas as ocasiões</p>
-        <Link className="bg-orange-500 hover:scale-105 transition-all text-white font-bold rounded-lg px-3 py-2" href="/receitas">
+        <Link className="bg-orange-500 hover:scale-105 hover:bg-orange-700 transition-all text-white font-bold rounded-lg px-3 py-2" href="/receitas">
           Ver todas as receitas
         </Link>
 
         </div>
       </section>
       {/*GALERIA*/}
-      <section className="container mx-auto">
-        <div>
-        <h2>Receitas em destaque</h2>
+      <section className="py-12">
+        <div className="flex flex-col items-center container mx-auto">
+        <h2 className="text-lg font-bold">Receitas em destaque</h2>
         {/*cards de receita*/}
 
-        <Link href="/receitas">Ver todas as receitas <ChevronRight /> </Link>
+        <Link className="flex hover:text-orange-700 transition-colors text-orange-400" href="/receitas">Ver todas as receitas <ChevronRight /> </Link>
         </div>
       </section>
     </main>
