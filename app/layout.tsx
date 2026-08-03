@@ -5,8 +5,8 @@ import Header from "@/components/Header";
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin"],
-});
+  subsets: ["latin"]
+})
 
 export const metadata: Metadata = {
   title: "Receitas",
@@ -19,13 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${inter.variable}h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
+    <html lang="pt-BR">
+      <body
+        className={`${inter.variable} antialiased min-h-screen flex flex-col`}
+      >
         <Header />
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
