@@ -25,6 +25,8 @@ export default function Home() {
         <Link className="flex hover:text-orange-700 transition-colors text-orange-400" href="/receitas">Ver todas as receitas <ChevronRight /> </Link>
         </div>
       </section>
+    <main className="grow">
+      <h1>Tela Inicial</h1>
     </main>
   );
 }
